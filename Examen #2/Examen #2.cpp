@@ -41,6 +41,9 @@ int main()
 
 	//Mostrar el nodo con mayor valor
     lista.NodoMayorValor();
+
+	//Mostrar numeros pares e impares
+    lista.MostrarNumerosParesEImpares();
 }
 
 

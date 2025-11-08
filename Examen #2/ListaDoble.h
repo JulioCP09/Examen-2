@@ -12,5 +12,6 @@ public:
 	void Mostrar();
 	void NodoMenorValor();
 	void NodoMayorValor();
+	void MostrarNumerosParesEImpares();
 };
 

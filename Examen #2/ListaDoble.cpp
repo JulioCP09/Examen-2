@@ -111,3 +111,34 @@ void ListaDoble::NodoMayorValor()
 	cout << "El nodo en la posicion " << contador << " tiene el mayor valor: " << mayor->dato << endl;
 }
 #pragma endregion
+
+#pragma region Metodo NumerosParesEImpares
+void ListaDoble::MostrarNumerosParesEImpares()
+{
+	NodoDoble* actual = head;
+	cout << "Numeros Pares: " << endl;
+	int posicionPares = 1;
+	while (actual != nullptr)
+	{
+		if (actual->dato % 2 == 0)
+		{
+			cout << "Valor del nodo: " << actual->dato << " en la posicion: " << posicionPares << endl;
+		}
+		posicionPares++;
+		actual = actual->siguiente;
+	}
+	cout << endl;
+	actual = head;
+	cout << "Numeros Impares: " << endl;
+	int posicionImpares = 1;
+	while (actual != nullptr)
+	{
+		if (actual->dato % 2 != 0)
+		{
+			cout << "Valor del nodo: " << actual->dato << " en la posicion: " << posicionImpares << endl;
+		}
+		posicionImpares++;
+		actual = actual->siguiente;
+	}
+}
+#pragma endregion
