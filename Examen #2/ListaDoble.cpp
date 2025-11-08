@@ -43,16 +43,18 @@ void ListaDoble::Insertar(int valor)
 void ListaDoble::Mostrar()
 {
 	NodoDoble* actual = head;
+	cout << "Elementos de la lista: " << endl;
 	while (actual != nullptr)
 	{
-		cout << actual->dato << " "; //Mostrar el dato del nodo actual
-		//Mostrar las direcciones de memoria
-		cout << "Direc actual" << actual << " ";
-		cout << "Direc anterior" << actual->anterior << " ";
-		cout << "Direc siguiente" << actual->siguiente << " ";
-		cout << endl;
+		cout << actual->dato << endl; //Mostrar el dato del nodo actual
+		////Mostrar las direcciones de memoria
+		//cout << "Direc actual" << actual << " ";
+		//cout << "Direc anterior" << actual->anterior << " ";
+		//cout << "Direc siguiente" << actual->siguiente << " ";
+		//cout << endl;
 		actual = actual->siguiente; //Avanzar al siguiente nodo
 	}
+	cout << endl;
 }
 #pragma endregion
 
@@ -81,6 +83,7 @@ void ListaDoble::NodoMenorValor()
 		actual = actual->siguiente;
 	}
 	cout << "El nodo en la posicion " << contador << " tiene el menor valor: " << menor->dato << endl;
+	cout << endl;
 }
 #pragma endregion
 
@@ -109,6 +112,7 @@ void ListaDoble::NodoMayorValor()
 		actual = actual->siguiente;
 	}
 	cout << "El nodo en la posicion " << contador << " tiene el mayor valor: " << mayor->dato << endl;
+	cout << endl;
 }
 #pragma endregion
 
